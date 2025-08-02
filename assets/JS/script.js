@@ -6,9 +6,11 @@ let n1 = 19;
 let n2 = 9;
 
 if (n1 > n2) {
-  console.log("Il Numero Piu Grande: " + n1);
-} else if (n2 < n1) {
-  console.log("il numero Piu Grande: ") + n1;
+  console.log("Il numero più grande è: " + n1);
+} else if (n2 > n1) {
+  console.log("Il numero più grande è: " + n2);
+} else {
+  console.log("I numeri sono uguali");
 }
 
 /* ESERCIZIO 2
@@ -27,8 +29,9 @@ if (num1 !== 5) {
 
 let n17 = 25;
 let n18 = 5;
-
-console.log(n17 % n18);
+if (n17 % n18 === 0) {
+  console.log("Divisibile per 5 ");
+} else "Non e Divisibile per 5 ";
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -36,10 +39,11 @@ console.log(n17 % n18);
 let num19 = 24;
 let num20 = 16;
 
-if (num19 >= 8 || num19 - num20 === 8 || num19 + num20 === 8 || num20 >= 8) {
-  console.log("la loro addizione/sottrazione e' uguale a 8.");
+if (num19 === 8 || num20 === 8 || Math.abs(num19 - num20 === 8)) {
+  console.log("la loro addizione  sottrazione e' uguale a 8");
+} else {
+  console.log("la loro addizione  sottrazione non e' uguale a 8");
 }
-
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
@@ -54,6 +58,7 @@ if (totalShoppingCart < 50) {
   conto = totalShoppingCart + costoDiSpedizione;
   console.log("Totale da pagare " + conto + "$");
 } else {
+  conto = totalShoppingCart;
   console.log("Totale da pagare " + conto + "$");
 }
 
@@ -61,6 +66,7 @@ if (totalShoppingCart < 50) {
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
+// შევქმნა ფუნქცია რომელიც შეყვანილ თანხას დაიანგა
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
