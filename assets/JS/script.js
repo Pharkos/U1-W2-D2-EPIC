@@ -48,15 +48,13 @@ if (num19 >= 8 || num19 - num20 === 8 || num19 + num20 === 8 || num20 >= 8) {
 
 let totalShoppingCart = 49;
 const costoDiSpedizione = 10;
-let carello = 0;
 let conto = 0;
 
-if (carello + totalShoppingCart < 50) {
-  conto = costoDiSpedizione + totalShoppingCart;
-
-  console.log("la cifra da pagare + spedizione " + conto);
+if (totalShoppingCart < 50) {
+  conto = totalShoppingCart + costoDiSpedizione;
+  console.log("Totale da pagare " + conto + "$");
 } else {
-  console.log("spedizione gratuita  " + totalShoppingCart);
+  console.log("Totale da pagare " + conto + "$");
 }
 
 /* ESERCIZIO 6
