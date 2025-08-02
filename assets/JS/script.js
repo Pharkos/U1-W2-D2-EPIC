@@ -66,7 +66,6 @@ if (totalShoppingCart < 50) {
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-// შევქმნა ფუნქცია რომელიც შეყვანილ თანხას დაიანგა
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -151,7 +150,7 @@ console.log(me);
 
 let myArrey = [];
 
-for (let i = 0; i <= 10; i++) {
+for (let i = 1; i <= 10; i++) {
   myArrey.push(i);
 
   console.log(myArrey);
@@ -160,3 +159,9 @@ for (let i = 0; i <= 10; i++) {
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
+
+console.log(myArrey);
+
+myArrey[myArrey.length - 1] = 1000;
+
+console.log(myArrey);
